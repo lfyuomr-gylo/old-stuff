@@ -1,0 +1,15 @@
+<configuration>
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <append>true</append>
+    <file>lamport-mutex-local.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>
+        %msg%n
+      </Pattern>
+    </encoder>
+  </appender>
+
+  <logger name="lmutex-demo" level="info" additivity="false">
+    <appender-ref ref="FILE"/>
+  </logger>
+</configuration>

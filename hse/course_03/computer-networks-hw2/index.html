@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peer to peer find min echo algorithm</title>
+</head>
+<body>
+  <div id="vue-app">
+    <p>id: {{id}}</p>
+    <p>number: {{number}}</p>
+    <p>neighbors: {{connections.map(conn => conn.peer).join(",")}}</p>
+
+    <div style="margin-bottom: 2em">
+      <h4>Add neighbor:</h4>
+      <input type="text" placeholder="Type neighbor id" v-model="newNeighborInput" />
+      <input type="button" @click="onAddNeighbor" value="Add!" />
+    </div>
+    <div>
+      <input type="button" @click="onFindMin" value="Find minimum" />
+    </div>
+    <div v-if="result" style="margin-right: 2em">
+      <p><b>Min: {{result}}</b></p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://unpkg.com/vue"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.14/peer.js"></script>
+  <script type="text/javascript" src="p2p.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<textarea id='text'></textarea>
+		<div id='output' style='width: 1200px; height: 100px; border: solid black 1px;'></div>
+		<input type='button' id='runButton' value='PUSH'>
+		<script type='text/javascript' src='browser_emlua.js'></script>
+		<script>
+			(function(){
+				document.getElementById('runButton').addEventListener('click', function(){
+					document.getElementById('output').innerHTML = document.getElementById('output').innerHTML + timeLua(document.getElementById('text').value);
+				});
+			})();
+		</script>
+	</body>
+</html>

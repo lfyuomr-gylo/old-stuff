@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress ALL -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lfyuomr.gylo.kango.client.view.LoginScreenController">
+   <children>
+      <HBox layoutX="134.0" layoutY="117.0" spacing="70.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <VBox layoutX="134.0" layoutY="122.0" prefHeight="83.0" prefWidth="94.0" spacing="50.0">
+               <children>
+                  <Label layoutX="134.0" layoutY="122.0" text="login:" />
+                  <Label layoutX="134.0" layoutY="174.0" text="password:" />
+               </children>
+            </VBox>
+            <VBox layoutX="287.0" layoutY="117.0" spacing="33.0">
+               <children>
+                  <TextField fx:id="loginField" layoutX="287.0" layoutY="117.0" />
+                  <PasswordField fx:id="passwordField" layoutX="287.0" layoutY="177.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button layoutX="493.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleSignInButtonAction" text="Sign in" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="70.0" />
+      <VBox layoutX="73.0" layoutY="187.0" spacing="20.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="70.0">
+         <children>
+            <Label layoutX="73.0" layoutY="187.0" text="Still have not account?" />
+            <Button layoutX="100.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleSignUpButtonAction" text="Sign up" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

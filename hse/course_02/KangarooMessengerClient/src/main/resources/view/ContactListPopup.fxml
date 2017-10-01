@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress ALL -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lfyuomr.gylo.kango.client.view.ContactListPopupController">
+   <children>
+      <ListView fx:id="contactListView" layoutX="86.0" layoutY="130.0" prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="218.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete from contact list" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0" />
+      <Button layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleCreateConversation" text="Create conversation" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0" />
+      <TextField fx:id="titleField" layoutX="8.0" layoutY="15.0" prefHeight="25.0" prefWidth="116.0" promptText="Type title" AnchorPane.leftAnchor="10.0" />
+   </children>
+</AnchorPane>

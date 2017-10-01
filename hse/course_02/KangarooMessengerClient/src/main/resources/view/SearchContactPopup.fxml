@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress ALL -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lfyuomr.gylo.kango.client.view.SearchContactPopupController">
+   <children>
+      <VBox alignment="CENTER" layoutX="126.0" layoutY="28.0" prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="Type user name:" />
+            <HBox alignment="CENTER" layoutX="126.0" layoutY="28.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="textField" alignment="CENTER" layoutX="126.0" layoutY="28.0" />
+                  <Button layoutX="424.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+               </children>
+            </HBox>
+            <ListView fx:id="foundContacts" layoutX="180.0" layoutY="80.0" prefHeight="289.0" prefWidth="600.0" />
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleAddToContacts" text="Add to contacts" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
